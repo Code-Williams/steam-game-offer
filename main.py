@@ -26,8 +26,8 @@ while True:
         last_check = True # set game is on offer
 
     # If cant find anything like discount or final price (game is out of offer) and last_check is game on offer
-    elif last_check == True:
-        print(f"Game is out of offer")
+    elif not final_price and last_check == True:
+        print(f"Game is out of soffer")
         last_check = False # set game is out of offer
 
     time.sleep(120) # check this page every 120 seconds (2mins)
